@@ -1,1 +1,1 @@
-See [wiki](https://squid.nt.tuwien.ac.at/gitlab/shared-scripts/openstreetmap_queries/wikis/Exporting-Path-Coordinates-from-OpenStreetMap)&hellip;
+See [wiki](https://github.com/vraida/Export-waypoints-from-OpenStreetMap/wiki)&hellip;
