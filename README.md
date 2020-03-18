@@ -5,16 +5,16 @@ Note: There is no OSM relation that would start in Wien Hbf and terminate in Ret
 
 ### 1. OpenStreetMap: Find the Data ID
 Go to OpenStreetMap (OSM) https://www.openstreetmap.org/ and select your data (e.g., a particular relation) to find out its ID. See Fig. 1&#8211;3.<br>
-<kbd><img src="https://raw.githubusercontent.com/vraida/Export-waypoints-from-OpenStreetMap/master/.data/step1.png" alt="step1" width=300><br>&nbsp;<br>Fig. 1: Right-click on an element of interest<br> and chose "Query features."<br>&nbsp;</kbd>
-<kbd><img src="https://raw.githubusercontent.com/vraida/Export-waypoints-from-OpenStreetMap/master/.data/step2.png" alt="step2" width=300><br>&nbsp;<br>Fig. 2: Select an appropriate relation.<br>&nbsp;<br>&nbsp;</kbd>
-<kbd><img src="https://raw.githubusercontent.com/vraida/Export-waypoints-from-OpenStreetMap/master/.data/step3.png" alt="step3" width=300><br>&nbsp;<br>Fig. 3: Copy the relation ID (here: 4683240).<br>&nbsp;<br>&nbsp;</kbd>
+<kbd><img src="https://raw.githubusercontent.com/vraida/Export-waypoints-from-OpenStreetMap/master/.data/step1.png" alt="step1" width=270><br>&nbsp;<br>Fig. 1: Right-click on an element of interest<br> and chose "Query features."<br>&nbsp;</kbd>
+<kbd><img src="https://raw.githubusercontent.com/vraida/Export-waypoints-from-OpenStreetMap/master/.data/step2.png" alt="step2" width=270><br>&nbsp;<br>Fig. 2: Select an appropriate relation.<br>&nbsp;<br>&nbsp;</kbd>
+<kbd><img src="https://raw.githubusercontent.com/vraida/Export-waypoints-from-OpenStreetMap/master/.data/step3.png" alt="step3" width=270><br>&nbsp;<br>Fig. 3: Copy the relation ID (here: 4683240).<br>&nbsp;<br>&nbsp;</kbd>
 
 ### 2. Overpass Query: Export the Data
 With a specific ID, we can query the OSM database using Overpass API https://wiki.openstreetmap.org/wiki/Overpass_API.
 Overpass turbo https://overpass-turbo.eu is a convenient tool that visualizes the results of Overpass queries and allows us to export the queried data in various formats. See Fig. 4&#8211;6.<br>
-<kbd><img src="https://raw.githubusercontent.com/vraida/Export-waypoints-from-OpenStreetMap/master/.data/step4.png" alt="step4" width=300><br>&nbsp;<br>Fig. 4: Query the relation ID. The resulting<br>group must be recursively broken with (._;>;);<br>to be displayed. We want a single path con-<br>necting Wien and Retz. The relation, however,<br>contains additional features, e.g., railway<br>platforms.<br>&nbsp;<br>&nbsp;</kbd>
-<kbd><img src="https://raw.githubusercontent.com/vraida/Export-waypoints-from-OpenStreetMap/master/.data/step5.png" alt="step5" width=300><br>&nbsp;<br>Fig. 5: By selecting only way-elements with<br>tag "rail" we remove all unwanted objects.<br><br><br><br><br>&nbsp;<br>&nbsp;</kbd>
-<kbd><img src="https://raw.githubusercontent.com/vraida/Export-waypoints-from-OpenStreetMap/master/.data/step6.png" alt="step6" width=300><br>&nbsp;<br>Fig. 6: When we are sattisfied with the query,<br>we can export the queried data in .osm format:<br>[exported_railway.osm](uploads/e62647f14d686c52a0d60992fb9813b1/exported_railway.osm).<br><br><br><br>&nbsp;<br>&nbsp;</kbd>
+<kbd><img src="https://raw.githubusercontent.com/vraida/Export-waypoints-from-OpenStreetMap/master/.data/step4.png" alt="step4" width=270><br>&nbsp;<br>Fig. 4: Query the relation ID. The resulting<br>group must be recursively broken with (._;>;);<br>to be displayed. We want a single path con-<br>necting Wien and Retz. The relation, however,<br>contains additional features, e.g., railway<br>platforms.<br>&nbsp;<br>&nbsp;</kbd>
+<kbd><img src="https://raw.githubusercontent.com/vraida/Export-waypoints-from-OpenStreetMap/master/.data/step5.png" alt="step5" width=270><br>&nbsp;<br>Fig. 5: By selecting only way-elements with<br>tag "rail" we remove all unwanted objects.<br><br><br><br><br>&nbsp;<br>&nbsp;</kbd>
+<kbd><img src="https://raw.githubusercontent.com/vraida/Export-waypoints-from-OpenStreetMap/master/.data/step6.png" alt="step6" width=270><br>&nbsp;<br>Fig. 6: When we are sattisfied with the query,<br>we can export the queried data in .osm format:<br>[exported_railway.osm](uploads/e62647f14d686c52a0d60992fb9813b1/exported_railway.osm).<br><br><br><br>&nbsp;<br>&nbsp;</kbd>
 
 ### 3. osmconvert: Convert the Data to .csv
 osmconvert https://wiki.openstreetmap.org/wiki/Osmconvert is a program that processes and converts OSM files.
