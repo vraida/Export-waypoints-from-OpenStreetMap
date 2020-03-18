@@ -1,0 +1,1 @@
+See [wiki](https://squid.nt.tuwien.ac.at/gitlab/shared-scripts/openstreetmap_queries/wikis/Exporting-Path-Coordinates-from-OpenStreetMap)&hellip;
