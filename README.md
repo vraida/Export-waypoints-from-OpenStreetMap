@@ -1,7 +1,6 @@
 ### The Goal
 Export desired data from OpenStreetMap (OSM) as a .csv file with a list of geographic coordinates (longitude/latitude).
-The following example shows how I exported coordinates of a railway between Wien and Retz, which I needed as a reference path for the dynamic time warping (DTW) algorithm.
-Note: There is no OSM relation that would start in Wien Hbf and terminate in Retz. We thus export a larger relation (here, Wien Meidling &rarr; Znojmo), which we can later cut off.
+The following example shows how to export coordinates of a railway between Wien and Retz. Note: There is no OSM relation that would start in Wien Hbf and terminate in Retz. We thus export a larger relation (here, Wien Meidling &rarr; Znojmo), which we can later cut off.
 
 ### 1. OpenStreetMap: Find the Data ID
 Go to OpenStreetMap (OSM) https://www.openstreetmap.org/ and select your data (e.g., a particular relation) to find out its ID. See Fig. 1&#8211;3.<br>
